@@ -79,7 +79,7 @@ def get_readable_time(seconds: int) -> str:
 PM_START_TEXT = """
 ʜᴇʏ[,](https://telegra.ph/file/88209c59d0ecafcd357a1.jpg)
 ✪ ᴛʜɪs ɪs {} !
-✪ ᴍᴏᴅᴜʟᴀʀ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ
+✪ ᴀ ᴩᴏᴡᴇʀ ꜰᴜʟ ɢʀᴏᴜᴩ ᴍᴀɴᴀɢᴇʀ ʙᴏᴛ ᴡɪᴛʜ ᴍᴀɴy ᴜꜱᴇꜰᴜʟʟ ᴄᴏᴍᴍᴀɴᴅꜱ
 ────────────────────────
 ➻ ᴜsᴇʀs » {}
 ➻ ᴄʜᴀᴛs » {}
@@ -105,7 +105,7 @@ buttons = [
     
  
         InlineKeyboardButton(
-            text=" ᴅᴇᴠᴇʟᴏᴘᴇʀ ", url=f"https://t.me/{OWNER_USERNAME}"
+            text=" ᴏᴡɴᴇʀ ", url=f"https://t.me/{OWNER_USERNAME}"
         ),
     ],
 ]
@@ -227,7 +227,7 @@ def start(update: Update, context: CallbackContext):
     else:
         update.effective_message.reply_photo(
             START_IMG,
-            caption="ɪ ᴀᴍ ᴀʟɪᴠᴇ !\n<b>ɪ ᴅɪᴅɴ'ᴛ sʟᴇᴘᴛ sɪɴᴄᴇ​:</b> <code>{}</code>".format(
+            caption="ചത്തിട്ടില്ലാ 😂 !\n<b>ɪ ᴅɪᴅɴ'ᴛ sʟᴇᴘᴛ sɪɴᴄᴇ​:</b> <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
@@ -493,7 +493,7 @@ def get_help(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="ᴏᴩᴇɴ ɪɴ ᴩʀɪᴠᴀᴛᴇ",
+                            text="𝙊𝙥𝙚𝙣 𝙥𝙧𝙞𝙫𝙖𝙩𝙚",
                             url="https://t.me/{}?start=help".format(
                                 context.bot.username
                             ),
@@ -501,7 +501,7 @@ def get_help(update: Update, context: CallbackContext):
                     ],
                     [
                         InlineKeyboardButton(
-                            text="ᴏᴩᴇɴ ʜᴇʀᴇ",
+                            text="𝙊𝙥𝙚𝙣 𝙝𝙚𝙧𝙚",
                             callback_data="help_back",
                         )
                     ],
@@ -747,8 +747,8 @@ def main():
         try:
             dispatcher.bot.send_photo(
                 f"@{SUPPORT_CHAT}",
-                "https://telegra.ph/file/29dfe5718ac9653c14efd.mp4",
-                caption="zᴇɴ ✘ ʀᴏʙᴏᴛ ɪs ᴀʟɪᴠᴇ !\n\nᴍᴀᴅᴇ ᴡɪᴛʜ 🖤 ʙʏ Aᴅɪᴛʏᴀ",
+                "https://telegra.ph/file/194adea39d3b71d21a19c.jpg",
+                caption="zarine ✘ ʀᴏʙᴏᴛ ɪs ᴀʟɪᴠᴇ !\n\nᴍᴀᴅᴇ ᴡɪᴛʜ 🖤 ʙʏ 𝘾𝙖𝙥𝙩𝙖𝙞𝙣",
             )
         except Unauthorized:
             LOGGER.warning(
