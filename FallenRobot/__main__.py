@@ -77,7 +77,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-ʜᴇʏ[,](https://telegra.ph/file/29dfe5718ac9653c14efd.mp4)
+ʜᴇʏ[,](https://telegra.ph/file/88209c59d0ecafcd357a1.jpg)
 ✪ ᴛʜɪs ɪs {} !
 ✪ ᴍᴏᴅᴜʟᴀʀ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ
 ────────────────────────
@@ -91,7 +91,7 @@ PM_START_TEXT = """
 buttons = [
     [
         InlineKeyboardButton(
-            text=" ᴀᴅᴅ ᴍᴇ ​ᴇʟsᴇ ʏᴏᴜ ɢᴀʏ",
+            text=" ᴀᴅᴅ ᴢᴀʀɪɴᴇ",
             url=f"https://t.me/{dispatcher.bot.username}?startgroup=true",
         ),
     ],
@@ -110,12 +110,12 @@ buttons = [
     ],
 ]
 
-FallenRobot_IMG = "https://telegra.ph/file/29dfe5718ac9653c14efd.mp4"
+FallenRobot_IMG = "https://telegra.ph/file/88209c59d0ecafcd357a1.jpg"
 
 HELP_STRINGS = f"""
 ᴢᴇɴ ✘ ʀᴏʙᴏᴛ *ᴇxᴄʟᴜsɪᴠᴇ ꜰᴇᴀᴛᴜʀᴇs*\n*» ᴄʜᴇᴄᴋᴏᴜᴛ ᴀʟʟ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅs*\n*» ᴀʟʟ ᴏꜰ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs ᴄᴀɴ ʙᴇ ᴜsᴇᴅ ᴡɪᴛʜ / ᴏʀ !*\n*» ɪꜰ ʏᴏᴜ ɢᴏᴛ ᴀɴʏ ɪssᴜᴇ ᴏʀ ʙᴜɢ ɪɴ ᴀɴʏ ᴄᴏᴍᴍᴀɴᴅ ᴘʟᴇᴀsᴇ ʀᴇᴘᴏʀᴛ ɪᴛ ᴛᴏ @{SUPPORT_CHAT}*\n\n*ㅤㅤㅤㅤㅤㅤ» ᴍᴀɪɴ ᴄᴏᴍᴍᴀɴᴅꜱ «*\n\n➲ /start : *ꜱᴛᴀʀᴛꜱ ᴍᴇ | ᴀᴄᴄᴏʀᴅɪɴɢ ᴛᴏ ᴍᴇ ʏᴏᴜ'ᴠᴇ ᴀʟʀᴇᴀᴅʏ ᴅᴏɴᴇ ɪᴛ​.*\n➲ /donate : *sᴜᴘᴘᴏʀᴛ ᴍᴇ ʙʏ ᴅᴏɴᴀᴛɪɴɢ ꜰᴏʀ ᴍʏ ʜᴀʀᴅᴡᴏʀᴋ​.*\n➲ /help  : *ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅꜱ ꜱᴇᴄᴛɪᴏɴ.*\n*  ‣ ɪɴ ᴘᴍ : ᴡɪʟʟ ꜱᴇɴᴅ ʏᴏᴜ ʜᴇʟᴘ​ ꜰᴏʀ ᴀʟʟ ꜱᴜᴘᴘᴏʀᴛᴇᴅ ᴍᴏᴅᴜʟᴇꜱ.*\n*  ‣ ɪɴ ɢʀᴏᴜᴘ : ᴡɪʟʟ ʀᴇᴅɪʀᴇᴄᴛ ʏᴏᴜ ᴛᴏ ᴘᴍ, ᴡɪᴛʜ ᴀʟʟ ᴛʜᴀᴛ ʜᴇʟᴘ​ ᴍᴏᴅᴜʟᴇꜱ.*"""
 
-DONATE_STRING = """[pythonXgamer](https://t.me/pythonxgamer)"""
+DONATE_STRING = """[click chey myre](https://t.me/Captain_of_Tele_Gram)"""
 
 IMPORTED = {}
 MIGRATEABLE = []
