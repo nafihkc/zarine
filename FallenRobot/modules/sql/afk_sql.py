@@ -8,8 +8,8 @@ class AFK(BASE):
     __tablename__ = "afk_users"
 
     user_id = Column(BigInteger, primary_key=True)
-    𝙄𝙨 𝙖𝙛𝙠 = Column(Boolean)
-    𝙍𝙚𝙖𝙨𝙤𝙣 = Column(UnicodeText)
+    is_afk = Column(Boolean)
+    reason = Column(UnicodeText)
 
     def __init__(self, user_id, reason="", is_afk=True):
         self.user_id = user_id
