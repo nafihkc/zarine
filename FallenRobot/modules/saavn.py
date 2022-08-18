@@ -25,13 +25,13 @@ async def song(client, message):
     try:
        args = message.text.split(None, 1)[1]
     except:
-        return await message.reply("/saavn requires an argument.")
+        return await message.reply("/saavn 𝙧𝙚𝙦𝙪𝙞𝙧𝙚𝙨 𝙖𝙣 𝙖𝙧𝙜𝙪𝙢𝙚𝙣𝙩.")
     if args.startswith(" "):
         await message.reply("/saavn requires an argument.")
         return ""
-    pak = await message.reply('Downloading...')
+    pak = await message.reply('𝘿𝙤𝙬𝙣𝙡𝙤𝙖𝙙𝙞𝙣𝙜 😁..')
     try:
-#Ahh The Fuck is too long😒
+#Ahh The Shit is too long 😒
         r = requests.get(f"https://jostapi.herokuapp.com/saavn?query={args}")
     except Exception as e:
         await pak.edit(str(e))
@@ -45,7 +45,7 @@ async def song(client, message):
     file = wget.download(slink)
     ffile = file.replace("mp4", "m4a")
     os.rename(file, ffile)
-    await pak.edit('Uploading...')
+    await pak.edit('𝙐𝙥𝙡𝙤𝙖𝙙𝙞𝙣𝙜 🙂🔥..')
     await message.reply_audio(audio=ffile, title=sname, performer=ssingers,caption=f"{sname} - from saavn",thumb=thumbnail)
     os.remove(ffile)
     await pak.delete()
