@@ -77,16 +77,24 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-𝑯𝒆𝒚[,](https://telegra.ph/file/d0de7ef61c2b723399248.jpg)
-✪ 𝑰𝒂𝒎 {} !
-✪ 𝑨 𝒉𝒂𝒏𝒅𝒔𝒐𝒎𝒆 𝒂𝒏𝒊𝒎𝒆 𝒕𝒉𝒆𝒎𝒆𝒅 𝒃𝒐𝒕.. 𝒂𝒅𝒅 𝒎𝒆 𝒕𝒐 𝒚𝒐𝒖'𝒓𝒆 𝒈𝒓𝒐𝒖𝒑 𝒂𝒔 𝒂𝒅𝒎𝒊𝒏 😘
+Hey[ㅤ](https://telegra.ph/file/d0de7ef61c2b723399248.jpg) iam {} !
+A Group manager,
+Made specially for Managing Groups
+
+I have lots of handy features such as
+
+➥ Restrict users ban,warn, mute
+➥ Greet users with media + text and buttons, with proper formatting.
+➥ Advanced flood control system
+➥ Save notes and filters with proper formatting
+➥ Download songs from saavn /saavn <your song>
+➥ Locks - tagall - echo - afk
+
 ────────────────────────
-➻ 𝑼𝒔𝒆𝒓𝒔 » {}
-➻ 𝑪𝒉𝒂𝒕𝒔 » {}
-➻ 𝑼𝒑𝒕𝒊𝒎𝒆 » {}
-────────────────────────
-✪ 𝑪𝒍𝒊𝒄𝒌 𝒐𝒏 𝒉𝒆𝒍𝒑 𝒃𝒖𝒕𝒕𝒐𝒏 𝒃𝒆𝒍𝒐𝒘 𝒕𝒐 𝒈𝒆𝒕 𝒊𝒏𝒇𝒐𝒓𝒎𝒂𝒕𝒊𝒐𝒏 𝒂𝒃𝒐𝒖𝒕 𝒎𝒚 𝒄𝒐𝒎𝒎𝒂𝒏𝒅𝒔.
-​"""
+
+There's even more! This is just the tip of the iceberg. Do note that i need to be promoted with proper admin permissions to function properly. Else i wont be able to function as said. 
+
+♪ Click on help to learn more!
 
 buttons = [
     [
