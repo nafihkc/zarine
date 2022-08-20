@@ -475,7 +475,7 @@ def get_help(update: Update, context: CallbackContext):
     chat = update.effective_chat  # type: Optional[Chat]
     args = update.effective_message.text.split(None, 1)
 
-    # ONLY send help in PM
+# ONLY send help in PM
     if chat.type != chat.PRIVATE:
         if len(args) >= 2 and any(args[1].lower() == x for x in HELPABLE):
             module = args[1].lower()
@@ -756,7 +756,7 @@ def main():
             dispatcher.bot.send_photo(
                 f"@{SUPPORT_CHAT}",
                 "https://telegra.ph/file/194adea39d3b71d21a19c.jpg",
-                caption="zarine ✘ ʀᴏʙᴏᴛ ɪs ᴀʟɪᴠᴇ !\n\nᴍᴀᴅᴇ ᴡɪᴛʜ 🖤 ʙʏ 𝘾𝙖𝙥𝙩𝙖𝙞𝙣",
+                caption="zarine ʀᴏʙᴏᴛ ɪs ᴀʟɪᴠᴇ !\n\nᴍᴀᴅᴇ ᴡɪᴛʜ 🖤 ʙʏ 𝘾𝙖𝙥𝙩𝙖𝙞𝙣",
             )
         except Unauthorized:
             LOGGER.warning(
