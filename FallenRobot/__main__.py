@@ -94,7 +94,7 @@ I have lots of handy features such as
 
 There's even more! This is just the tip of the iceberg. Do note that i need to be promoted with proper admin permissions to function properly. Else i wont be able to function as said. 
 
-♪ Click on help to learn more!
+♪ Click on help to learn more!"""
 
 buttons = [
     [
