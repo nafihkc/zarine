@@ -87,12 +87,13 @@ I have lots of handy features such as
 ➥ Greet users with media + text and buttons, with proper formatting.
 ➥ Advanced flood control system
 ➥ Save notes and filters with proper formatting
-➥ Download songs from saavn          /saavn <your song>
+➥ Download songs from saavn       ㅤ     /saavn <your song>
 ➥ Locks - tagall - echo - afk
 
 ────────────────────────
 
-There's even more! This is just the tip of the iceberg. Do note that i need to be promoted with proper admin permissions to function properly. Else i wont be able to function as said. 
+There's even more! This is just the tip of the iceberg. Do note that i need to be promoted with proper admin permissions to function properly. Else i wont be able to function as said.
+[join my updates channel for more news](t.me/zarine_updates)
 
 ♪ Click on help to learn more!"""
 
