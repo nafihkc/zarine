@@ -5,18 +5,18 @@ from sqlalchemy import Column, String, UnicodeText, distinct, func
 
 
 class Rules(BASE):
-    tablename = "rules"
+    __tablename__ = "rules"
     chat_id = Column(String(14), primary_key=True)
     rules = Column(UnicodeText, default="")
 
-    def init(self, chat_id):
+    def __init__(self, chat_id):
         self.chat_id = chat_id
 
-    def repr(self):
+    def __repr__(self):
         return "<Chat {} rules: {}>".format(self.chat_id, self.rules)
 
 
-Rules.table.create(checkfirst=True)
+Rules.__table__.create(checkfirst=True)
 
 INSERTION_LOCK = threading.RLock()
 
