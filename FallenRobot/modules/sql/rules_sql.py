@@ -1,22 +1,22 @@
 import threading
 
-from FallenRobot.modules.sql import BASE, SESSION
+from ShuKurenaiXRoBot.modules.sql import BASE, SESSION
 from sqlalchemy import Column, String, UnicodeText, distinct, func
 
 
 class Rules(BASE):
-    __tablename__ = "rules"
+    tablename = "rules"
     chat_id = Column(String(14), primary_key=True)
     rules = Column(UnicodeText, default="")
 
-    def __init__(self, chat_id):
+    def init(self, chat_id):
         self.chat_id = chat_id
 
-    def __repr__(self):
+    def repr(self):
         return "<Chat {} rules: {}>".format(self.chat_id, self.rules)
 
 
-Rules.__table__.create(checkfirst=True)
+Rules.table.create(checkfirst=True)
 
 INSERTION_LOCK = threading.RLock()
 
