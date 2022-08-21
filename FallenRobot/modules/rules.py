@@ -120,7 +120,8 @@ def set_rules(update: Update, context: CallbackContext):
             entities=entities,
             offset=offset,
         )
-sql.set_rules(chat_id, markdown_rules)
+
+        sql.set_rules(chat_id, markdown_rules)
         update.effective_message.reply_text("Successfully set rules for this group.")
     else:
         update.effective_message.reply_text("There's... no rules?")
@@ -134,7 +135,7 @@ def clear_rules(update: Update, context: CallbackContext):
     update.effective_message.reply_text("Successfully cleared rules!")
 
 
-def stats():
+def __stats__():
     return f"• {sql.num_chats()} groups have rules."
 
 
@@ -144,20 +145,20 @@ def __import_data__(chat_id, data):
     sql.set_rules(chat_id, rules)
 
 
-def migrate(old_chat_id, new_chat_id):
+def __migrate__(old_chat_id, new_chat_id):
     sql.migrate_chat(old_chat_id, new_chat_id)
 
 
 def __chat_settings__(chat_id, user_id):
-    return f"This chat has had it's rules set: {bool(sql.get_rules(chat_id))}"
+    return f"This chat has had it's rules set: `{bool(sql.get_rules(chat_id))}`"
 
 
-help = """
- ‣ /rules*:* get the rules for this chat.
- ‣ /rules here*:* get the rules for this chat but send it in the chat.
+__help__ = """
+ ‣ `/rules`*:* get the rules for this chat.
+ ‣ `/rules here`*:* get the rules for this chat but send it in the chat.
 *Admins only:*
- ‣ /setrules <your rules here>*:* set the rules for this chat.
- ‣ /clearrules*:* clear the rules for this chat.
+ ‣ `/setrules <your rules here>`*:* set the rules for this chat.
+ ‣ `/clearrules`*:* clear the rules for this chat.
 """
 
 __mod_name__ = "Rᴜʟᴇs"
