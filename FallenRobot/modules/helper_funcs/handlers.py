@@ -46,7 +46,7 @@ class AntiSpam:
         Return True if user is to be ignored else False
         """
         if user in self.whitelist:
-            return False
+            return True
         try:
             self.limiter.try_acquire(user)
             return False
