@@ -135,38 +135,3 @@ def clear_rules(update: Update, context: CallbackContext):
     update.effective_message.reply_text("Successfully cleared rules!")
 
 
-def __stats__():
-    return f"• {sql.num_chats()} groups have rules."
-
-
-def __import_data__(chat_id, data):
-    # set chat rules
-    rules = data.get("info", {}).get("rules", "")
-    sql.set_rules(chat_id, rules)
-
-
-def __migrate__(old_chat_id, new_chat_id):
-    sql.migrate_chat(old_chat_id, new_chat_id)
-
-
-def __chat_settings__(chat_id, user_id):
-    return f"This chat has had it's rules set: `{bool(sql.get_rules(chat_id))}`"
-
-
-__help__ = """
- ‣ `/rules`*:* get the rules for this chat.
- ‣ `/rules here`*:* get the rules for this chat but send it in the chat.
-*Admins only:*
- ‣ `/setrules <your rules here>`*:* set the rules for this chat.
- ‣ `/clearrules`*:* clear the rules for this chat.
-"""
-
-__mod_name__ = "Rᴜʟᴇs"
-
-GET_RULES_HANDLER = CommandHandler("rules", get_rules)
-SET_RULES_HANDLER = CommandHandler("setrules", set_rules)
-RESET_RULES_HANDLER = CommandHandler("clearrules", clear_rules)
-
-dispatcher.add_handler(GET_RULES_HANDLER)
-dispatcher.add_handler(SET_RULES_HANDLER)
-dispatcher.add_handler(RESET_RULES_HANDLER)
