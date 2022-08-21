@@ -50,7 +50,7 @@ __mod_name__ = "sʜᴀʏᴀʀɪ"
 
 __help__ = """
 
-*Download 320kb/s songs from saavn* \n*from saavn.*
+*Download 320kb/s songs* \n*from saavn.*
 
 ❍ /saavn *:* *your song.* \n\n ❍ Eg /saavn *:* *Let me down slowly.* \n\n [𝗦𝘂𝗽𝗽𝗼𝗿𝘁](t.me/zarine-support) & [𝗨𝗽𝗱𝗮𝘁𝗲𝘀](t.me/leya_updates) 
 
