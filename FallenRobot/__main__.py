@@ -87,7 +87,7 @@ I have lots of handy features such as
 ➥ Greet users with media + text and buttons, with proper formatting.
 ➥ Advanced flood control system
 ➥ Save notes and filters with proper formatting
-➥ Download songs from saavn /saavn <your song>
+➥ Download songs from saavn      /saavn <your song>
 ➥ Locks - tagall - echo - afk
 
 ────────────────────────
