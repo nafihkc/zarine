@@ -107,8 +107,11 @@ def set_rules(update: Update, context: CallbackContext):
 
         sql.set_rules(chat_id, markdown_rules)
         update.effective_message.reply_text("Successfully set rules for this group.")
+    else:
+        update.effective_message.reply_text("There's... no rules?")
 
 
+@connection_status
 @user_admin
 def clear_rules(update: Update, context: CallbackContext):
     chat_id = update.effective_chat.id
@@ -116,8 +119,8 @@ def clear_rules(update: Update, context: CallbackContext):
     update.effective_message.reply_text("Successfully cleared rules!")
 
 
-def __stats__():
-    return f"× {sql.num_chats()} chats have rules set."
+def stats():
+    return f"• {sql.num_chats()} groups have rules."
 
 
 def __import_data__(chat_id, data):
@@ -126,25 +129,27 @@ def __import_data__(chat_id, data):
     sql.set_rules(chat_id, rules)
 
 
-def __migrate__(old_chat_id, new_chat_id):
+def migrate(old_chat_id, new_chat_id):
     sql.migrate_chat(old_chat_id, new_chat_id)
 
 
 def __chat_settings__(chat_id, user_id):
-    return f"This chat has had it's rules set: `{bool(sql.get_rules(chat_id))}`"
+    return f"This chat has had it's rules set: {bool(sql.get_rules(chat_id))}"
 
 
-__mod_name__ = "Rules"
+help = """
+ ‣ /rules*:* get the rules for this chat.
+ ‣ /rules here*:* get the rules for this chat but send it in the chat.
+*Admins only:*
+ ‣ /setrules <your rules here>*:* set the rules for this chat.
+ ‣ /clearrules*:* clear the rules for this chat.
+"""
 
-GET_RULES_HANDLER = CommandHandler(
-    "rules", get_rules, filters=Filters.chat_type.groups, run_async=True
-)
-SET_RULES_HANDLER = CommandHandler(
-    "setrules", set_rules, filters=Filters.chat_type.groups, run_async=True
-)
-RESET_RULES_HANDLER = CommandHandler(
-    "clearrules", clear_rules, filters=Filters.chat_type.groups, run_async=True
-)
+__mod_name__ = "Rᴜʟᴇs"
+
+GET_RULES_HANDLER = CommandHandler("rules", get_rules)
+SET_RULES_HANDLER = CommandHandler("setrules", set_rules)
+RESET_RULES_HANDLER = CommandHandler("clearrules", clear_rules)
 
 dispatcher.add_handler(GET_RULES_HANDLER)
 dispatcher.add_handler(SET_RULES_HANDLER)
