@@ -1,6 +1,6 @@
 import threading
 
-from ShuKurenaiXRoBot.modules.sql import BASE, SESSION
+from FallenRobot.modules.sql import BASE, SESSION
 from sqlalchemy import Column, String, UnicodeText, distinct, func
 
 
