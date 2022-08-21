@@ -17,7 +17,7 @@ PHOTO = [
 
 SHREYXD = [
     [
-        InlineKeyboardButton(text="ʟᴇɢᴇɴᴅ", url=f"https://t.me/pythonxgamer"),
+        InlineKeyboardButton(text="Owner", url=f"https://t.me/captain_of_tele_gram"),
         InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"),
     ],
     [
@@ -28,7 +28,7 @@ SHREYXD = [
     ],
 ]
 
-lol = "https://telegra.ph/file/90552395a5e96d0e7fab9.jpg"
+lol = "https://telegra.ph/file/08c2f596bb59f654255c9.jpg"
 
 
 @pbot.on_message(filters.command("alive"))
@@ -54,7 +54,7 @@ async def restart(client, m: Message):
         lol,
         caption=f"""**ʜᴇʏ, ɪ ᴀᴍ ZARINE**
    ━━━━━━━━━━━━━━━━━━━
-  » **ᴍʏ ᴏᴡɴᴇʀ :** [⋆ ͢ ̶ͥ ̶ ̶ͣ ͓ ̶ͫ𝘾𝘼𝙋𝙏𝘼𝙄𝞟»⃟🇺🇸 ℡](https://t.me/{OWNER_USERNAME})
+  » **Maintained by :** [⋆ ͢ ̶ͥ ̶ ̶ͣ ͓ ̶ͫ𝘾𝘼𝙋𝙏𝘼𝙄𝞟»⃟🇺🇸 ℡](https://t.me/{OWNER_USERNAME})
   
   » **ʟɪʙʀᴀʀʏ ᴠᴇʀsɪᴏɴ :** `{lver}`
   
