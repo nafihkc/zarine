@@ -22,8 +22,8 @@ SHREYXD = [
     ],
     [
         InlineKeyboardButton(
-            text="ᴀᴅᴅ ᴍᴇ ᴇʟsᴇ ʏᴏᴜ ɢᴇʏ",
-            url=f"https://t.me/zenxroBot?startgroup=true",
+            text="Add me to you're group",
+            url=f"https://t.me/misszarine_bot?startgroup=true",
         ),
     ],
 ]
@@ -34,9 +34,9 @@ lol = "https://telegra.ph/file/90552395a5e96d0e7fab9.jpg"
 @pbot.on_message(filters.command("alive"))
 async def restart(client, m: Message):
     await m.delete()
-    accha = await m.reply("⚡")
+    accha = await m.reply("💃")
     await asyncio.sleep(2)
-    await accha.edit("ᴅɪɴɢ ᴅᴏɴɢ ꨄ︎ ᴀʟɪᴠɪɴɢ..")
+    await accha.edit("wait ᴅᴏɴɢ ꨄ︎ ᴀʟɪᴠɪɴɢ..")
     await asyncio.sleep(0.5)
     await accha.edit("ᴅɪɴɢ ᴅᴏɴɢ ꨄ︎ ᴀʟɪᴠɪɴɢ......")
     await asyncio.sleep(0.5)
@@ -52,9 +52,9 @@ async def restart(client, m: Message):
     await asyncio.sleep(2)
     await m.reply_photo(
         lol,
-        caption=f"""**ʜᴇʏ, ɪ ᴀᴍ 『𝙕𝙀𝙉 ✘ 𝙍𝙊𝘽𝙊𝙏』**
+        caption=f"""**ʜᴇʏ, ɪ ᴀᴍ ZARINE**
    ━━━━━━━━━━━━━━━━━━━
-  » **ᴍʏ ᴏᴡɴᴇʀ :** [ᴀᴅɪᴛʏᴀ](https://t.me/{OWNER_USERNAME})
+  » **ᴍʏ ᴏᴡɴᴇʀ :** [⋆ ͢ ̶ͥ ̶ ̶ͣ ͓ ̶ͫ𝘾𝘼𝙋𝙏𝘼𝙄𝞟»⃟🇺🇸 ℡](https://t.me/{OWNER_USERNAME})
   
   » **ʟɪʙʀᴀʀʏ ᴠᴇʀsɪᴏɴ :** `{lver}`
   
