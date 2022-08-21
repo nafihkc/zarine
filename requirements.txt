@@ -61,4 +61,3 @@ telegram
 gpytranslate
 yt_dlp
 asgiref
-ShuKurenaiXRoBot
