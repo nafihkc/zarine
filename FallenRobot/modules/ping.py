@@ -16,6 +16,7 @@ sites_list = {
     "Jikan": "https://api.jikan.moe/v3",
 }
 
+PING_IMG = "https://telegra.ph//file/75280e721b12b8b4a18a4.jpg"
 
 def get_readable_time(seconds: int) -> str:
     count = 0
@@ -68,7 +69,6 @@ def ping_func(to_ping: List[str]) -> List[str]:
     return ping_result
 
 
-@run_async
 @sudo_plus
 def ping(update: Update, context: CallbackContext):
     msg = update.effective_message
@@ -111,4 +111,4 @@ dispatcher.add_handler(PING_HANDLER)
 dispatcher.add_handler(PINGALL_HANDLER)
 
 __command_list__ = ["ping", "pingall"]
-__handlers__ = [PING_HANDLER, PINGALL_HANDLER]
+handlers = [PING_HANDLER, PINGALL_HANDLER]
